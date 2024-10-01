@@ -3,12 +3,11 @@
   "github": {
     "silent": true
   },
-  "builds": [
-    {
-      "src": "index.cjs",
-      "use": "@vercel/node"
+  "functions": {
+    "index.cjs": {
+      "runtime": "@vercel/node"
     }
-  ],
+  },
   "rewrites": [
     {
       "source": "/(.*)",
